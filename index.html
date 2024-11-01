@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>My Library</h1>
+
+    <!-- Button to open the modal -->
+    <button id="openModal">Add New Book</button>
+
+    <!-- Modal Structure -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Add a New Book</h2>
+            <form id="modalForm">
+                <input type="text" id="modalTitle" placeholder="Title" required>
+                <input type="text" id="modalAuthor" placeholder="Author" required>
+                <input type="number" id="modalPages" placeholder="Pages" required>
+                <label>
+                    <input type="checkbox" id="modalRead"> Read
+                </label>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Container to display books -->
+    <div id="bookContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
